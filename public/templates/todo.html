@@ -1,0 +1,10 @@
+{{allData | json}}
+<div class="row">
+	<div class="col-md-8">
+		<div ng-repeat="data in allData">
+		{{data._id |json}}
+			<p>{{data.description}}<span><input ng- type="button" class="deleteItem" value="-" ng-click="deleteTodo(data._id)"></span></p>
+		</div>
+	</div>
+</div>
+<a href="#/addtodo">add</a>

@@ -1,0 +1,15 @@
+<div class="row">
+	<div class="col-md-8">
+		<div ng-repeat="data in allData">
+			<p>{{data.description}}</p>
+		</div>
+	</div>
+</div>
+<div class="row">
+<div class="col-md-8">
+	<form id="addtodoform" name="addtodoform">
+		<input type="text" name="description" ng-model="data.des">
+		<input type="submit" name="submit" ng-click="formSubmit(data.des)">
+	</form>
+</div>
+</div>

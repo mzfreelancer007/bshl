@@ -1,0 +1,9 @@
+MongoDB 2.4 database added.  Please make note of these credentials:
+
+   Root User:     admin
+   Root Password: a4wiU_Z8vDCP
+   Database Name: bshl
+
+Connection URL: mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/
+
+SSH connection for OpenShift : ssh 578dbd2c0c1e66319c0000a0@bshl-ashek.rhcloud.com
