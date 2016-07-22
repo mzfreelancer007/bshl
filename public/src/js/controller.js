@@ -12,7 +12,7 @@ myApp.controller('addTodoController', function($scope,$http,$location) {
       method: 'POST',
       data:  getData,
       headers: { 'Content-Type': 'application/json' },
-      url: 'http://localhost:3005/api/addtodo'
+      url: 'http://localhost:5000/api/addtodo'
     }).then(function (res) {
       $location.path('/');
          

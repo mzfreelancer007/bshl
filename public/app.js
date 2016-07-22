@@ -1,6 +1,6 @@
 // A simple module with no dependencies
 angular.module("mainModule", ['ngRoute','myController'])
-  .controller("todoController", function ($scope,$http,$location,$portService)
+  .controller("todoController", function ($scope,$http,$location)
   {
 
     // Simple Post request for updating todo
