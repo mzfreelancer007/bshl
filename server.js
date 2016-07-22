@@ -2,7 +2,7 @@ var express     = require('express');
 var app         = express();
 var bodyParser  = require('body-parser');
 
-var MongoClient = require('mongodb').MongoClient;
+/*var MongoClient = require('mongodb').MongoClient;
 var mongodb = require('mongodb');
 var assert = require('assert');
 var ObjectId = require('mongodb').ObjectID;
@@ -75,10 +75,10 @@ app.post('/api/deletetodo',function(req,res){
 
 
 //*------------------------------public-----------------------------*
-
+*/
 
 app.get('/',function(req,res){
-  console.log("index");
+  req.send("<h2>Thanks for using our service.</h2>");
 })
 
 
