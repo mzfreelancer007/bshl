@@ -12,7 +12,7 @@ myApp.controller('addTodoController', function($scope,$http,$location) {
       method: 'POST',
       data:  getData,
       headers: { 'Content-Type': 'application/json' },
-      url: 'https://test-demom.herokuapp/api/addtodo'
+      url: 'https://test-demom.herokuapp.com/api/addtodo'
     }).then(function (res) {
       $location.path('/');
          

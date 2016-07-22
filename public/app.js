@@ -10,7 +10,7 @@ angular.module("mainModule", ['ngRoute','myController'])
         method: 'POST',
         data:  Data,
         headers: { 'Content-Type': 'application/json' },
-        url: 'https://test-demom.herokuapp/api/deletetodo'
+        url: 'https://test-demom.herokuapp.com/api/deletetodo'
       }).then(function (res) {
            $location.path('/');
         }, function (res) {
@@ -21,7 +21,7 @@ angular.module("mainModule", ['ngRoute','myController'])
     // Simple GET request example:
     $http({
       method: 'GET',
-      url: 'https://test-demom.herokuapp/api/alltodo'
+      url: 'https://test-demom.herokuapp.com/api/alltodo'
     }).then(function successCallback(res) {
         //console.log(response.data);
          $scope.allData = res.data;
