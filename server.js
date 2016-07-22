@@ -4,17 +4,17 @@ var bodyParser  = require('body-parser');
 
 app.set('port', (process.env.PORT || 5000));
 
-/*var MongoClient = require('mongodb').MongoClient;
+var MongoClient = require('mongodb').MongoClient;
 var mongodb = require('mongodb');
 var assert = require('assert');
 var ObjectId = require('mongodb').ObjectID;
-var url = 'mongodb://localhost:27017/todo';
+var url = 'mongodb://todouser:SNmithun007@ds027145.mlab.com:27145/todo';
 var myPort = 3005;
 
-app.use(express.static(process.cwd() + '/public'));*/
-//app.use(bodyParser.urlencoded({extended:false}));
+app.use(express.static(process.cwd() + '/public'));
+app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
-/*
+
 //*------------------------------api--------------------------------*
 
 app.get('/api/alltodo',function(req,res){
@@ -77,7 +77,6 @@ app.post('/api/deletetodo',function(req,res){
 
 
 //*------------------------------public-----------------------------*
-*/
 
 app.get('/',function(req,res){
   res.send("hello world");
