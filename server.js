@@ -9,10 +9,10 @@ var ObjectId = require('mongodb').ObjectID;
 var url = 'mongodb://localhost:27017/todo';
 var myPort = 3005;
 
-app.use(express.static(process.cwd() + '/public'));
+app.use(express.static(process.cwd() + '/public'));*/
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
-
+/*
 //*------------------------------api--------------------------------*
 
 app.get('/api/alltodo',function(req,res){
@@ -78,7 +78,7 @@ app.post('/api/deletetodo',function(req,res){
 */
 
 app.get('/',function(req,res){
-  req.send("<h2>Thanks for using our service.</h2>");
+  req.json("<h2>Thanks for using our service.</h2>");
 })
 
 
