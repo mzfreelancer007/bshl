@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 //Express application to allow multiple origins
 app.use(function(req, res, next) {
-  var allowedOrigins = ['http://localhost:5000', 'http:test-demom.herokuapp.com'];
+  var allowedOrigins = ['http://localhost:5000', 'https:test-demom.herokuapp.com'];
   var origin = req.headers.origin;
   if(allowedOrigins.indexOf(origin) > -1){
        res.setHeader('Access-Control-Allow-Origin', origin);
@@ -93,7 +93,7 @@ app.post('/api/deletetodo',function(req,res){
 
 //*------------------------------public-----------------------------*
 
-app.get('/',function(req,res){
+app.get('/api',function(req,res){
   res.send("hello world");
 });
 
