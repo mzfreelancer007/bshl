@@ -10,7 +10,7 @@ var url = 'mongodb://localhost:27017/todo';
 var myPort = 3005;
 
 app.use(express.static(process.cwd() + '/public'));*/
-app.use(bodyParser.urlencoded({extended:false}));
+//app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 /*
 //*------------------------------api--------------------------------*
@@ -78,8 +78,8 @@ app.post('/api/deletetodo',function(req,res){
 */
 
 app.get('/',function(req,res){
-  req.json("<h2>Thanks for using our service.</h2>");
-})
+  res.send("hello world");
+});
 
 
 
