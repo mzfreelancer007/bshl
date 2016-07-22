@@ -85,6 +85,6 @@ app.get('/',function(req,res){
 
 
 
-app.listen(myPort,function(){
-	console.log("Using port "+myPort);
+app.listen("3000",function(){
+	console.log("Using port 3000");
 });
