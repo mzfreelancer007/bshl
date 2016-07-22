@@ -1,5 +1,5 @@
 // A simple module with no dependencies
-angular.module("mainModule", ['ngRoute','myController','appService'])
+angular.module("mainModule", ['ngRoute','myController'])
   .controller("todoController", function ($scope,$http,$location,$portService)
   {
 
@@ -10,7 +10,7 @@ angular.module("mainModule", ['ngRoute','myController','appService'])
         method: 'POST',
         data:  Data,
         headers: { 'Content-Type': 'application/json' },
-        url: 'http://localhost:'+portService.port+'/api/deletetodo'
+        url: 'http://localhost:5000/api/deletetodo'
       }).then(function (res) {
            $location.path('/');
         }, function (res) {
@@ -21,7 +21,7 @@ angular.module("mainModule", ['ngRoute','myController','appService'])
     // Simple GET request example:
     $http({
       method: 'GET',
-      url: 'http://localhost:'+portService.port+'/api/alltodo'
+      url: 'http://localhost:5000/api/alltodo'
     }).then(function successCallback(res) {
         //console.log(response.data);
          $scope.allData = res.data;

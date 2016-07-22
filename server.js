@@ -8,7 +8,7 @@ var MongoClient = require('mongodb').MongoClient;
 var mongodb = require('mongodb');
 var assert = require('assert');
 var ObjectId = require('mongodb').ObjectID;
-var url = 'mongodb://todouser:SNmithun007@ds027145.mlab.com:27145/todo';
+var url = 'mongodb://localhost:27017/todo';
 var myPort = 3005;
 
 app.use(express.static(process.cwd() + '/public'));
